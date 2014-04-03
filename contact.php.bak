@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>.:Puppig:.</title>
+<!-- Required header files -->
+<link href="css/style3.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>
+<script type="text/javascript">
+function toggle(style1,style2) {
+document.getElementById("div1").style.display=style1;
+document.getElementById("div2").style.display=style2;
+}
+</script>
+</head>
+<body>
+<!-- Sign-up and Login Links Starts Here -->
+<?php include("include/header.php"); ?>
+<br clear="all" />
+<?php include("include/popup.php"); ?>
+
+
+
+			 <?php include("include/footer.php"); ?>
+</body>
+</html>

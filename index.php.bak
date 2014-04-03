@@ -1,0 +1,91 @@
+<?php
+session_start();
+include("include/connect.php");
+if(isset($_POST['search']))
+{
+//print_r($_POST);
+$question=$_POST['question'];
+$result=mysql_query("SELECT * FROM search WHERE keyword LIKE '%$question%'");
+//echo "SELECT * FROM members_registration WHERE name LIKE '%$question%'";
+//exit;
+if($row=@mysql_fetch_array($result)) 
+  {
+  header("location:search1.php?question=".$question."&&action=displaydetails");
+  }else
+  {
+  header("location:search1.php?result=nodetails");
+  }
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>::Puppig Home::</title>
+<!-- Required header files -->
+<link href="css/style3.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/min.js"></script>
+<script language="javascript" type="text/javascript" src="js/vpb_script.js"></script>
+<script type="text/javascript">
+function toggle(style1,style2) {
+document.getElementById("div1").style.display=style1;
+document.getElementById("div2").style.display=style2;
+}
+</script> 
+</head>
+<body>
+<!-- Sign-up and Login Links Starts Here -->
+<?php include("include/header.php"); ?>
+<?php include("include/popup.php"); ?>
+
+<div id="container">
+<div id="content">
+    <div id="layer">
+	<center><div class="styled-select">
+   <select>
+      <option>Location:</option>
+      <option>The second option</option>
+   </select>
+   <select>
+      <option>Role:</option>
+      <option>The second option</option>
+   </select>
+   <select>
+      <option>Date:</option>
+      <option>The second option</option>
+   </select>
+</div>
+
+</div><br>
+	<div id="layer1">
+        <table width="100%">
+        <tr>
+			<td colspan="1">Latest Job Openings:<dl>
+<dt>Java Openings</dt>
+<dd></dd>
+<dt>PHP Developers</dt>
+<dd></dd>
+</dl></td>
+			<td>Latest Tech News:<dl>
+<dt>Java</dt>
+<dd></dd>
+<dt>PHP</dt>
+<dd></dd>
+</dl></td>
+        </tr>
+        <tr rowspan="1" width="50%">
+			<td ></td>
+			<td width="50%">Latest Job News:<dl>
+<dt>Java</dt>
+<dd></dd>
+<dt>PHP</dt>
+<dd></dd>
+</dl></td>
+        </tr>
+        </table>
+</div>
+</div>
+<?php include("include/footer.php"); ?>
+</body>
+</html>

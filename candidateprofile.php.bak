@@ -1,0 +1,85 @@
+<?php
+include("include/connect.php");
+session_start();
+
+?>
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link href="css/style1.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript">
+
+function handleSelection(choice) {
+document.getElementById('select');
+document.getElementById(choice).style.display="block"
+}
+</script>
+<head>
+<link href="css/flat-ui.css" rel="stylesheet">
+<style type="text/css">
+.alignCenter {
+	text-align: center;
+}
+</style>
+    
+  <title>.:Puppig:.</title>
+ </head>
+ <body>
+ <?php include("include/header.php"); ?>
+<!-- END: Sticky Header -->
+ 
+<!-- BEGIN: Page Content -->
+<div id="container">
+    <div id="content">
+	<center><input type="text" name="question" id="question" class="font_family box"   required>
+			   <input type="submit" value="Search" name="search" class="font_family box1" style="margin-top:1%;"/></center>
+			   <div></div>
+	<div id="layer1" style="font-family:Times New Roman;" >
+<select name="select">Role:
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select><select name="select">Location:
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select><select name="select">Date:
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select><select name="select">
+  <option value="value1">Value 1</option> 
+  <option value="value2" selected>Value 2</option>
+  <option value="value3">Value 3</option>
+</select>
+	<td colspan="1"><dl>
+<dt><a href="">Jobs Applied</a></dt>
+<dd></dd>
+<dt><a href="">View/Update My Profile</a></dt>
+<dd></dd>
+<dt><a href="">Recommended Jobs</a></dt>
+<dd></dd>
+<dt><a href="">Jobs Applied</a></dt>
+<dd></dd>
+<dt><a href="">Company Status</a></dt>
+<dd></dd>
+<dt><a href="">Job Stats</a></dt>
+<dd></dd>
+</dl></td>
+
+</div>
+
+	</div>
+</div>	
+
+<!-- END: Page Content -->
+ 
+<!-- BEGIN: Sticky Footer -->
+  <?php include("include/footer1.php"); ?>
+ </body>
+</html>

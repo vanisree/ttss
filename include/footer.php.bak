@@ -1,0 +1,17 @@
+<div id="footer_container">
+    <div id="footer">
+	 <div align="right">
+	 <div align="left">
+	 <p style="text-align:left;">
+	 <li><a href="aboutus.php" id="signin">about</a></li> 
+
+<li><a href="careers.php" id="signup">careers</a></li>
+<li><a href="contactus.php" id="signup">contact</a></li>
+<span style="float:right;">
+
+       <font style="arial" size="3" color="" style="font-family:'Comic Sans MS" >Copyright &copy; Puppig Corp. All rights reserved.</font></span></p>
+	   
+    </div>
+</div>
+	</div>
+</div>
